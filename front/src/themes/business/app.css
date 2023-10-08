@@ -1,0 +1,351 @@
+.login-background {
+    background-image: url(/public/assets/images/LoginBackground.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    min-width: 100vw;
+    min-height: 100vh;
+}
+
+.login-stand {
+    height: 100vh;
+    background: linear-gradient(180deg, #FAFAFA 4.23%, rgba(250, 250, 250, 0) 40.75%);
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.5));
+}
+
+.login-box {
+    background: #FAFAFA;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.5);
+    border-radius: 15px;
+}
+
+.login-button {
+    background: #4F46E5;
+    border-radius: 5px;
+    appearance: none;
+    border: 0;
+}
+
+.home-signin-button {
+    background: #4F46E5;
+    border: 1px solid #D1D5DB;
+    box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.05);
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.home-signin-button:hover {
+    cursor: pointer;
+    background: #1d49aa;
+}
+
+.login-button:hover {
+    cursor: pointer;
+    background: #1d49aa;
+}
+
+.login-button:focus {
+    outline: none;
+    box-shadow: 0 0 0 4px #cbd6ee;
+}
+
+.input-field {
+    padding: 0px;
+    margin: 0px;
+}
+
+.text-title {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 36px;
+    color: #111827;
+}
+
+.text-title2 {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 22px;
+}
+
+.text-home1 {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    color: black;
+}
+
+.text-home2 {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 22px;
+    color: #676767;
+}
+
+.text-main {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    color: #111827;
+}
+
+.text-main-bold {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 19px;
+    color: #111827;
+    white-space: nowrap;
+}
+
+.text-normal {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    color: #4B5563;
+}
+
+.text-bold {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    color: black;
+}
+
+.text-normal-light {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 20px;
+    color: #FFFFFF;
+
+}
+
+.text-inter {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    color: #000000;
+}
+
+.text-mini {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 10px;
+}
+
+.link-normal {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+    color: #4F46E5;
+}
+
+.link-big {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 20px;
+    color: #4F46E5;
+}
+
+.text-gray {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 20px;
+    color: #6B7280;
+}
+
+.team-list-background {
+    background: #f6f6f6;
+}
+
+.team-list-member {
+    background: white;
+}
+
+.team-list-image {
+    border-radius: 50%;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    overflow: hidden;
+}
+
+.team-share-button {
+    background: #e0f2fe;
+    border-radius: 5px;
+    appearance: none;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border: 0;
+}
+
+.team-share-button:hover {
+    background: #7DD3FC;
+    cursor: pointer;
+}
+
+.team-share-button:focus {
+    outline: none;
+    box-shadow: 0 0 0 4px #cbd6ee;
+}
+
+.active-user-list {
+    background: #E0F2FE;
+    border-radius: 8px;
+}
+
+.attach-box {
+    background: #FFFFFF;
+    border: 1px solid #E5E7EB;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 6px 6px 6px 6px;
+}
+
+.comp-button {
+    border-radius: 4px;
+    padding-top: 1px;
+    padding-bottom: 1px;
+}
+
+.comp-button:hover {
+    outline: none;
+    border-color: black;
+    box-shadow: 0px 4px 4px #6B7280;
+    padding-top: 1px;
+    cursor: pointer;
+}
+
+.modal-content {
+    -webkit-border-radius: 20px !important;
+    -moz-border-radius: 20px !important;
+    border-radius: 20px !important;
+}
+
+.vertical-line {
+    border-left: thin solid #8D8D8D;
+}
+
+.comp-desc {
+    background: #EBFEE0;
+    border-radius: 20px;
+}
+
+.comp-check {
+    background: #E0F2FE;
+    border-radius: 6px;
+}
+
+.green-box {
+    background: #E2FFD0;
+    border-radius: 6px;
+}
+
+.comment {
+    border: none;
+    resize: none;
+}
+
+.comment-about {
+    border: 1px dashed gray;
+    resize: none;
+}
+
+.board-title {
+    border: none;
+    resize: none;
+    background: #E0F2FE;
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 22px;
+}
+
+textarea:focus {
+    outline: none !important;
+    border: none
+}
+
+.icon-button:hover {
+    cursor: pointer;
+}
+
+a:hover,
+a:visited,
+a:link,
+a:active {
+    text-decoration: none;
+}
+
+.selected-background {
+    background: rgba(164, 164, 164, 0.2);
+    border-radius: 5px 0px 0px 5px;
+}
+
+.background-title {
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(/public/assets/images/title.jpg);
+    filter: blur(8px);
+    height: 330px;
+    background-position: center center;
+    object-fit: cover;
+}
+
+.background-title-cover {
+    background-image: url(/public/assets/images/title.jpg);
+    background-position: center center;
+    background-size: cover;
+    height: 330px;
+}
+
+.header-home-background {
+    background: #AFDFFF;
+}
+
+.header-team-background {
+    background: #E0F2FE;
+}
+
+.header-team-page {
+    border-radius: 10px 10px 0px 0px;
+}
+
+.kanban-background {
+    background: #E0F2FE;
+    border-radius: 30px;
+}
+
+.team-selected {
+    border-radius: 4px;
+}
+
+.sidebar {
+    background: white;
+}
+
+.feedback-mark {
+    border: 1px solid #D1D5DB;
+    border-radius: 30px;
+    width: 40px;
+    height: 30px;
+}

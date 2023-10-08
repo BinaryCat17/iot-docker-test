@@ -1,0 +1,12 @@
+
+FROM node:20 AS build
+
+WORKDIR /app
+
+COPY front/package.json ./
+COPY front/package-lock.json ./
+RUN npx expo install
+COPY front ./
+
+RUN npx npm run build
+CMD node build/index.js

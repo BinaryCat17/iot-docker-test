@@ -1,0 +1,1 @@
+SELECT checkname, compname, level, maxvotes FROM compchecks;

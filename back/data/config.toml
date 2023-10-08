@@ -1,0 +1,47 @@
+[run]
+api = "rest"
+storage = "sql"
+
+[api_rest]
+host = "0.0.0.0"
+port = "8082"
+
+[storage_sql]
+host = "postgres"
+name = "dbname"
+password = "dbpassword"
+port = "5432"
+user = "dbuser"
+
+[access.unauthorized]
+read-public = ["login", "teams"]
+  
+write-public = ["register"]
+
+[access.user]
+extends = ["unauthorized"]
+read-private = ["self-info"]
+read-public = [
+  "user-info",
+  "team-users",
+  "user-team-info",
+  "user-comps",
+  "user-comp-checks",
+  "comps",
+  "comp-checks",
+  "get-file",
+  "user-attach",
+  "user-comp-preview",
+  "comp-comment",
+  "comp-status",
+  "comp-level",
+  "user-review",
+  "kanban",
+  "team-user-info"
+]
+write-public = ["kanban"]
+write-private = ["self-info, user-comps", "save-file", "user-attach"]
+
+[access.teamlead]
+extends = ["user"]
+write-public = ["user-team-info", "save-file", "comp-comment", "comp-status", "comp-check", "comp-level"]

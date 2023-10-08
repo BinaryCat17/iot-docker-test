@@ -1,0 +1,8 @@
+FROM python:3.9
+
+WORKDIR /app/workspace/back
+
+COPY ../back /app/workspace/back
+RUN python3 -m pip install --no-cache-dir -r /app/workspace/back/requirements.txt
+
+CMD python3 app/server.py

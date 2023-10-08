@@ -1,0 +1,10 @@
+FROM node:20
+
+WORKDIR /app/workspace/front
+
+COPY front/package.json /app/workspace/front
+COPY front/package-lock.json /app/workspace/front
+RUN npm install
+COPY front /app/workspace/front
+
+CMD npm run serve

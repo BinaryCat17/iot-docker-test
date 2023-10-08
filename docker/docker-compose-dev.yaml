@@ -1,0 +1,41 @@
+services:
+  agro-back:
+    build:
+      context: ../
+      dockerfile: docker/Dockerfile.back.dev
+    image: agro-back-dev:$TAG
+    volumes:
+      - type: bind
+        source: ../
+        target: /app/workspace/
+      - resources:/app/workspace/resources
+    ports:
+      - "$BACK_PORT:8082"
+    env_file: ../.env
+    depends_on:
+      - postgres
+
+  agro-front:
+    build:
+      context: ../
+      dockerfile: docker/Dockerfile.front.dev
+    image: agro-front-dev/agro-front:$TAG
+    volumes:
+      - type: bind
+        source: ../
+        target: /app/workspace/
+      - node_modules_front:/app/workspace/front/node_modules
+      - resources:/app/workspace/resources
+    ports:
+      - '$FRONT_PORT:8081'
+    env_file: ../.env
+
+  postgres:
+    image: postgres:13.3
+    ports:
+      - "$POSTGRES_PORT:5432"
+    env_file: ../.env
+
+volumes:
+  resources:
+  node_modules_front:

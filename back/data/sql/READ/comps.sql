@@ -1,0 +1,1 @@
+select compname, color, levelcount, description from comps;
